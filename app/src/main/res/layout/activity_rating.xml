@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical"
+  tools:context=".ui.activity.SettingsActivity">
+
+  <include layout="@layout/layout_top_view" />
+  <RatingBar
+    android:id="@+id/rating_bar"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="120dp"
+    android:layout_gravity="center_horizontal"/>
+  <EditText
+    android:id="@+id/edit"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_margin="30dp"
+    android:padding="15dp"
+    android:hint="请输入内容"
+    android:gravity="left|top"
+    android:background="@drawable/shape_stroke_32cbd1_r_15"
+    />
+</LinearLayout>

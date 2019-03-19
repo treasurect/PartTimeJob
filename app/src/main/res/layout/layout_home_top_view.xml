@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:orientation="vertical">
+
+  <FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="200dp">
+
+    <ImageView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:scaleType="centerCrop"
+      android:src="@mipmap/pic_part_time" />
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="30dp"
+      android:layout_marginLeft="16dp"
+      android:layout_marginTop="36dp"
+      android:layout_marginRight="16dp"
+      android:gravity="center"
+      android:orientation="horizontal">
+
+      <TextView
+        android:id="@+id/now_loc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:text="位置"
+        android:textColor="@color/white_f8"
+        android:textStyle="bold" />
+
+      <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/shape_solid_ff_r_35">
+
+        <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_vertical"
+          android:layout_marginLeft="15dp"
+          android:layout_marginTop="1dp"
+          android:src="@mipmap/ic_search" />
+
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_vertical"
+          android:layout_marginLeft="40dp"
+          android:text="大家都在搜：实习"
+          android:textColor="@color/white_d5"
+          android:textSize="12sp" />
+      </FrameLayout>
+    </LinearLayout>
+  </FrameLayout>
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="@android:color/white"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+      android:id="@+id/long_part"
+      android:layout_width="0dp"
+      android:layout_height="match_parent"
+      android:layout_gravity="bottom"
+      android:layout_weight="1"
+      android:gravity="center">
+
+      <ImageView
+        android:id="@+id/long_part_img"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/ic_long_part" />
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/long_part_img"
+        android:layout_centerHorizontal="true"
+        android:padding="5dp"
+        android:text="长期兼职"
+        android:textColor="@color/main_txt_color"
+        android:textSize="10sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+      android:id="@+id/short_part"
+      android:layout_width="0dp"
+      android:layout_height="match_parent"
+      android:layout_gravity="bottom"
+      android:layout_weight="1"
+      android:gravity="center">
+
+      <ImageView
+        android:id="@+id/short_part_img"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/ic_short_part" />
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/short_part_img"
+        android:layout_centerHorizontal="true"
+        android:padding="5dp"
+        android:text="短期兼职"
+        android:textColor="@color/main_txt_color"
+        android:textSize="10sp" />
+    </RelativeLayout>
+    <RelativeLayout
+      android:id="@+id/skill_part"
+      android:layout_width="0dp"
+      android:layout_height="match_parent"
+      android:layout_gravity="bottom"
+      android:layout_weight="1"
+      android:gravity="center">
+
+      <ImageView
+        android:id="@+id/skill_part_img"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/ic_skill_part" />
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/skill_part_img"
+        android:layout_centerHorizontal="true"
+        android:padding="5dp"
+        android:text="技能兼职"
+        android:textColor="@color/main_txt_color"
+        android:textSize="10sp" />
+    </RelativeLayout>
+    <RelativeLayout
+      android:id="@+id/inter_part"
+      android:layout_width="0dp"
+      android:layout_height="match_parent"
+      android:layout_gravity="bottom"
+      android:layout_weight="1"
+      android:gravity="center">
+
+      <ImageView
+        android:id="@+id/inter_part_img"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/ic_inter_part" />
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inter_part_img"
+        android:layout_centerHorizontal="true"
+        android:padding="5dp"
+        android:text="实习兼职"
+        android:textColor="@color/main_txt_color"
+        android:textSize="10sp" />
+    </RelativeLayout>
+  </LinearLayout>
+  <View
+    android:layout_width="match_parent"
+    android:layout_height="6dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:background="@color/white_d5"/>
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="25dp">
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="为你推荐"
+      android:textSize="10sp"
+      android:layout_centerVertical="true"
+      android:layout_marginLeft="25dp"/>
+    <TextView
+      android:id="@+id/intent_setting"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="意向设置"
+      android:textColor="@color/yellow_ffe301"
+      android:textSize="10sp"
+      android:layout_centerVertical="true"
+      android:layout_alignParentRight="true"
+      android:layout_marginRight="25dp"/>
+  </RelativeLayout>
+  <View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:background="@color/item_pressed"/>
+</LinearLayout>

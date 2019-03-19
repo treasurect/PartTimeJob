@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical"
+  tools:context=".ui.activity.MainActivity">
+  <FrameLayout
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1" />
+
+  <View
+    android:layout_width="match_parent"
+    android:layout_height="0.5dp"
+    android:background="@color/white_d5" />
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="49dp"
+    android:layout_alignParentBottom="true"
+    android:background="@android:color/white"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+      android:id="@+id/sports_layout"
+      android:layout_width="0dp"
+      android:layout_height="match_parent"
+      android:layout_gravity="bottom"
+      android:layout_weight="1"
+      android:gravity="center">
+
+      <ImageView
+        android:id="@+id/sports_img"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/recommend" />
+
+      <TextView
+        android:id="@+id/recommend_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sports_img"
+        android:layout_centerHorizontal="true"
+        android:padding="2dp"
+        android:text="首页"
+        android:textColor="@color/main_txt_color"
+        android:textSize="10sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+      android:id="@+id/find_layout"
+      android:layout_width="0dp"
+      android:layout_height="match_parent"
+      android:layout_gravity="bottom"
+      android:layout_weight="1"
+      android:gravity="center">
+
+      <ImageView
+        android:id="@+id/find_img"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/follow" />
+
+      <TextView
+        android:id="@+id/follow_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/find_img"
+        android:layout_centerHorizontal="true"
+        android:padding="2dp"
+        android:text="精选"
+        android:textColor="@color/main_txt_color"
+        android:textSize="10sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+      android:id="@+id/mine_layout"
+      android:layout_width="0dp"
+      android:layout_height="match_parent"
+      android:layout_gravity="bottom"
+      android:layout_weight="1"
+      android:gravity="center">
+
+      <ImageView
+        android:id="@+id/mine_img"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/mine" />
+
+      <TextView
+        android:id="@+id/mine_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mine_img"
+        android:layout_centerHorizontal="true"
+        android:padding="2dp"
+        android:text="我的"
+        android:textColor="@color/main_txt_color"
+        android:textSize="10sp" />
+    </RelativeLayout>
+  </LinearLayout>
+</LinearLayout>

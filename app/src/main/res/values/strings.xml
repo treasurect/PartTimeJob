@@ -1,0 +1,7 @@
+<resources>
+  <string name="app_name">PartTimeJob</string>
+
+  <!-- TODO: Remove or change this placeholder text -->
+  <string name="hello_blank_fragment">Hello blank fragment</string>
+  <string name="msg_hint">1.确保兼职的可靠性，避免额外的押金\n2.看清兼职时间，避免错过\n3.确认兼职地点，避免不必要的麻烦</string>
+</resources>

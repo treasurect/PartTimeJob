@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".ui.activity.PartIssueActivity">
+
+  <include layout="@layout/layout_top_view" />
+
+  <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="60dp"
+    android:layout_marginBottom="60dp">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+      <ImageView
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="225dp"
+        android:scaleType="centerCrop" />
+
+      <EditText
+        android:id="@+id/edit_title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="请输入标题" />
+
+      <EditText
+        android:id="@+id/edit_price"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="请输入价格，格式150元/天" />
+
+      <EditText
+        android:id="@+id/edit_clearing"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="请输入结算方式，格式日结" />
+
+      <EditText
+        android:id="@+id/edit_type"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="请输入兼职类型，格式技能或者实习" />
+
+      <EditText
+        android:id="@+id/edit_duration"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="请输入兼职时长，格式长期" />
+
+      <EditText
+        android:id="@+id/edit_sex"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="请输入人群定向，格式男女不限" />
+
+      <EditText
+        android:id="@+id/edit_detail"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:hint="请输入工作详情" />
+    </LinearLayout>
+  </ScrollView>
+
+  <TextView
+    android:id="@+id/issue"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_gravity="bottom"
+    android:background="@color/yellow_ffe301"
+    android:gravity="center"
+    android:text="立即发布"
+    android:textColor="@color/black_2d"
+    android:textSize="16sp" />
+</FrameLayout>

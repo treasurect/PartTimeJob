@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="2400dp"
+    android:id="@id/root">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@android:color/white"
+    android:text="男"
+    android:gravity="center"
+    android:textSize="16sp"
+    android:id="@+id/man"
+    android:textColor="@color/gray_8c"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f2f2f2"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:background="@android:color/white"
+        android:text="女"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:id="@+id/women"
+        android:textColor="@color/gray_8c"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f2f2f2"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:background="@android:color/white"
+        android:text="保密"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:id="@+id/unkonow"
+        android:textColor="@color/gray_8c"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f2f2f2"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:text="取消"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:id="@+id/cancle"
+        android:background="@android:color/white"
+        android:textColor="@color/black_2d"/>
+</LinearLayout>

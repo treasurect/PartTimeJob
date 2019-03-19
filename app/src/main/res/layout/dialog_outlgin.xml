@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:id="@id/root">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@android:color/white"
+        android:text="退出后不会删除历史记录，下次登录依然可以使用该帐号"
+        android:gravity="center"
+        android:paddingLeft="35dp"
+        android:paddingRight="35dp"
+        android:textSize="12sp"
+        android:id="@+id/man"
+        android:textColor="@color/gray_8c"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f2f2f2"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:background="@drawable/selected_bepress"
+        android:text="退出登录"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:id="@+id/outlogin"
+        android:textColor="@color/blue_32cbd1"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f2f2f2"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:text="取消"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:id="@+id/cancle"
+        android:background="@android:color/white"
+        android:textColor="@color/black_2d"/>
+</LinearLayout>
